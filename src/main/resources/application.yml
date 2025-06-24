@@ -1,0 +1,32 @@
+spring:
+    application:
+        name: EmailTest
+    
+    #mailsender
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ${MAIL_USERNAME}
+        password: ${MAIL_PASSWORD}
+        properties:
+            mail:
+                debug: true
+                smtp: 
+                    auth: true
+                    starttls:
+                        enable: true
+                        required: true
+    
+    #freemarker
+    freemarker:
+        template-loader-path: classpath:/templates/
+        suffix: .ftl
+        charset: UTF-8
+        check-template-location: true
+        cache: false # 開發時可設為 false 比較好除錯
+
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test
+        username: root
+        password: 1234
