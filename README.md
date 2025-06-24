@@ -4,7 +4,9 @@ Send the message by Email.<br>
 <br>
 ## How to do
 1. Create app password in Google account (for sender email use)
+   <br>
 2. init Spring Boot Project
+   <br>
 3. pom.xml (outer package you can use)
    ```xml
    
@@ -54,5 +56,8 @@ Send the message by Email.<br>
    Set the email subject. (subject) <br>
    Get template module, you should define the module path.
    Set the model (model with parameters), it can be printed in the email message. <br>
-   
-9. Test
+   <br>
+7. Test
+   Don't forget to set your sender config in Configuration ${MAIL_USERNAME} and ${MAIL_PASSWORD} <br>
+   Use your App Password in MAIL_PASSWORD, or it can be authenticated by Gmail. <br>
+   <br>
