@@ -1,6 +1,6 @@
 # Email Service Example
 ## Which function can it offer
-傳送郵件功能<br>
+Send the message by Email.<br>
 <br>
 ## How to do
 1. Create app password in Google account (for sender email use)
